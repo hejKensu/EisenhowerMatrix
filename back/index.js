@@ -13,6 +13,9 @@ const port = 3000;
 
 /* express 미들웨어 설정 */
 
+//정적파일 제공
+app.use(express.static("front"));
+
 //cors 설정
 app.use(cors()); //보완설정을 느슨하게 설정
 
